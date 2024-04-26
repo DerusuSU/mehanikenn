@@ -104,6 +104,12 @@ h4 {
 .header__nav {
   margin-top: 24px;
 }
+@media (min-width: 1440px) {
+  .header__nav {
+    display: block;
+    opacity: 1;
+  }
+}
 .header__list {
   list-style: none;
   display: flex;
@@ -114,6 +120,7 @@ h4 {
   text-decoration: none;
   color: #656565;
   font-weight: 400;
+  overflow: hidden;
 }
 .header__link--effect-1 {
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -273,7 +280,6 @@ h4 {
   .header__nav {
     display: none;
     position: absolute;
-    opacity: 0;
     z-index: 3;
     margin-top: 16px;
   }

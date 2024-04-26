@@ -3,12 +3,19 @@ class Menu {
         this.button = document.querySelector(obj.button);
         this.screen = document.querySelector(obj.screen);
         this.nav = document.querySelector(obj.nav);
+        // this.links = document.querySelectorAll(obj.links);
         this.contacts = document.querySelector(obj.contacts);
         this.init()
     }
     init() {
         this.bindings();
+
         this.button.addEventListener("click", this.burger_click);
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 1024) {
+                this.nav.setAttribute("style", "");
+            }
+        })
     }
 
     bindings() {
@@ -86,5 +93,6 @@ const menu = new Menu({
     button: ".header__burger",
     screen: ".header__screen",
     nav: ".header__nav",
+    // links: "",
     contacts: ".header__contacts",
 })
