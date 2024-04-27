@@ -4,46 +4,95 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="header">
-            <a class="header__link" href="#">
-                <img class="header__logo" src="svg/logo.svg">
-            </a>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li><a class="header__link header__link--effect-2" href="#">Главная</a></li>
-                    <li><a class="header__link header__link--effect-2" href="#">Каталог</a></li>
-                    <li><a class="header__link header__link--effect-2" href="#">Сотрудничество</a></li>
-                    <li><a class="header__link header__link--effect-2" href="#">Контакты</a></li>
-                    <li><a class="header__link header__link--effect-2" href="#">О нас</a></li>
-                </ul>
-            </nav>
-            <a class="header__phone header__link header__link--effect-2" href="#">+7 (911) 000 00 00</a>
-            <button class="header__burger">
-                <span></span>
-                <span></span>
-            </button>
-            <div class="header__screen">
-                <div class="header__contacts">
+    <header class="header">
+        <a class="header__home" href="#">
+            <img class="header__logo" src="svg/logo.svg">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a class="header__link header__link--effect-2" href="#">Главная</a></li>
+                <li><a class="header__link header__link--effect-2" href="#">Каталог</a></li>
+                <li><a class="header__link header__link--effect-2" href="#">Сотрудничество</a></li>
+                <li><a class="header__link header__link--effect-2" href="#">Контакты</a></li>
+                <li><a class="header__link header__link--effect-2" href="#">О нас</a></li>
+            </ul>
+        </nav>
+        <a class="header__phone header__link--effect-2" href="#">+7 (911) 000 00 00</a>
+        <button class="header__burger">
+            <span></span>
+            <span></span>
+        </button>
+        <div class="header__screen">
+            <div class="header__contacts">
+                <span>
                     <p>Контакты</p>
+                </span>
+                <span>
                     <p>+7 (911) 000 00 00<br>mehanikenn@bk.ru</p>
+                </span>
+                <span>
                     <p>192289, Санкт-Петербург, Софийская ул., дом №95</p>
-                </div>
+                </span>
+
+
+
             </div>
-            
-        </header>
-        <script src="js/gsap.min.js"></script>
-        <script src="js/header.js" async defer></script>
-    </body>
+        </div>
+
+    </header>
+    <div class="hero">
+        <div class="hero__sec-1">
+            <p class="hero__text">
+                Дверцы на любой вкус и размер, которые 
+                идеально впишутся в ваш интерьер и обеспечат
+                ежедневный комфорт и безопасность
+            </p>
+        </div>
+        <div class="hero__sec-2">
+            <p class="hero__text">
+                Классические<br>
+                Арочные<br>
+                Угловые<br>
+                П-образные<br>
+                Эркер<br>
+                Одностворчатые<br>
+                Двустворчатые
+            </p>
+            <h1 class="hero__title">КАМИННЫЕ ДВЕРЦЫ MEHANIKENN</h1>
+        </div>
+        <div class="hero__slider">
+            <div class="hero__wrapper">
+                <div class="hero__item"></div>
+                <div class="hero__item"></div>
+                <div class="hero__item"></div>
+                <div class="hero__item"></div>
+                <div class="hero__item"></div>
+                <div class="hero__item hero__item--focus"></div>
+                <div class="hero__item"></div>
+                <div class="hero__item"></div>
+                <div class="hero__item"></div>
+                <div class="hero__item"></div>
+                <div class="hero__item"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/header.js" async defer></script>
+    <script src="js/hero.js" async defer></script>
+</body>
+
 </html>
