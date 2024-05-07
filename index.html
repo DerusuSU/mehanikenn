@@ -12,6 +12,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/flicking.css">
+    <link rel="stylesheet" href="scss/flicking-inline.css">
+    <link rel="stylesheet" href="scss/flicking-plugins.css">
+    <link rel="stylesheet" href="scss/pagination.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -54,45 +61,407 @@
         </div>
 
     </header>
-    <div class="hero">
+    <!-- <div class="hero">
         <div class="hero__sec-1">
-            <p class="hero__text">
-                Дверцы на любой вкус и размер, которые 
-                идеально впишутся в ваш интерьер и обеспечат
-                ежедневный комфорт и безопасность
-            </p>
         </div>
         <div class="hero__sec-2">
-            <p class="hero__text">
-                Классические<br>
-                Арочные<br>
-                Угловые<br>
-                П-образные<br>
-                Эркер<br>
-                Одностворчатые<br>
-                Двустворчатые
-            </p>
+            <img class="hero__logo" src="svg/logo-square.svg">
             <h1 class="hero__title">КАМИННЫЕ ДВЕРЦЫ MEHANIKENN</h1>
+            <p class="hero__text">
+                Официальный сайт завода «Mehanikenn» в России
+            </p>
         </div>
-        <div class="hero__slider">
-            <div class="hero__wrapper">
-                <div class="hero__item"></div>
-                <div class="hero__item"></div>
-                <div class="hero__item"></div>
-                <div class="hero__item"></div>
-                <div class="hero__item"></div>
-                <div class="hero__item hero__item--focus"></div>
-                <div class="hero__item"></div>
-                <div class="hero__item"></div>
-                <div class="hero__item"></div>
-                <div class="hero__item"></div>
-                <div class="hero__item"></div>
+        <div class="hero__slider flicking-viewport" id="hero-slider">
+            <div class="hero__wrapper flicking-camera">
+                <div class="hero__item panel"><img src="img/carousel/crsl_1.png"></div>
+                <div class="hero__item panel"><img src="img/carousel/crsl_2.png"></div>
+                <div class="hero__item panel"><img src="img/carousel/crsl_3.png"></div>
+                <div class="hero__item panel"><img src="img/carousel/crsl_4.png"></div>
+                <div class="hero__item panel"><img src="img/carousel/crsl_5.png"></div>
+                <div class="hero__item panel"><img src="img/carousel/crsl_6.png"></div>
+                <div class="hero__item panel"><img src="img/carousel/crsl_7.png"></div>
+                <div class="hero__item panel"><img src="img/carousel/crsl_8.png"></div>
+                <div class="hero__item panel"><img src="img/carousel/crsl_9.png"></div>
+                <div class="hero__item panel"><img src="img/carousel/crsl_10.png"></div>
+            </div>
+        </div>
+    </div> -->
+    <div class="hero container">
+        <p class="hero__text">Официальный сайт завода «Mehanikenn» в России</p>
+        <div class="hero__title">
+            <h1>КАМИННЫЕ ДВЕРЦЫ MEHANIKENN</h1>
+            <img class="hero__logo" src="svg/logo-square.svg">
+        </div>
+        <div class="hero__content">
+            <div class="hero__slider flicking-viewport" id="hero-slider">
+                <div class="hero__wrapper flicking-camera">
+                    <div class="hero__item panel"><img src="img/carousel/crsl_1.png"></div>
+                    <div class="hero__item panel"><img src="img/carousel/crsl_2.png"></div>
+                    <div class="hero__item panel"><img src="img/carousel/crsl_3.png"></div>
+                    <div class="hero__item panel"><img src="img/carousel/crsl_4.png"></div>
+                    <div class="hero__item panel"><img src="img/carousel/crsl_5.png"></div>
+                    <div class="hero__item panel"><img src="img/carousel/crsl_6.png"></div>
+                    <div class="hero__item panel"><img src="img/carousel/crsl_7.png"></div>
+                    <div class="hero__item panel"><img src="img/carousel/crsl_8.png"></div>
+                    <div class="hero__item panel"><img src="img/carousel/crsl_9.png"></div>
+                    <div class="hero__item panel"><img src="img/carousel/crsl_10.png"></div>
+                </div>
+            </div>
+            <div class="hero__subtitle">
+                <h3>
+                    Производство каминных, печных дверец и котлов длительного
+                    горения «MehanikeNn» продающее подразделение по территории
+                    России и склад готовой продукции
+                </h3>
             </div>
         </div>
     </div>
+    <div class="about container">
+        <div class="about__text text-wrapper">
+            <div class="text-wrapper__name">
+                <p>О нас</p>
+            </div>
+            <div class="text-wrapper__title">
+                <h2>Один из крупнейших производителей каминных дверец в России и Беларуси</h2>
+            </div>
+            <div class="text-wrapper__subtitle">
+                <h3>
+                    Наша компания специализируется на изготовлении каминных дверец,
+                    которые сочетают в себе стильный дизайн, высокую функциональность
+                    и безопасность. мы работаем как с физическими лицами, изготавливая
+                    дверцы по индивидуальным размерам, так и с юридическими, качественно
+                    и быстро выполняя свою работу.
+                </h3>
+            </div>
+            <div class="text-wrapper__empty"></div>
+            <div class="text-wrapper__paragraph">
+                <p>
+                    С момента основания мы стремимся к выдающемуся качеству наших изделий,
+                    предлагая клиентам широкий выбор моделей и размеров, а также индивидуальный
+                    подход к каждому заказу. Наши продукты проходят строгий контроль качества
+                    на каждом этапе производства, что гарантирует надёжность и долговечность
+                    нашей продукции.
+                </p>
+            </div>
+        </div>
+        <button class="button about__button">
+            <span class="button__text">О компании</span>
+            <div class="button__square">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 9H16.2L13.6 6.4L15 5L20 10L15 15L13.6 13.6L16.2 11H0V9Z" fill="#F1F1F1" />
+                </svg>
+            </div>
+        </button>
+        <div class="about__images">
+            <div class="about__images-wrapper about__images-wrapper-1">
+                <img class="about__image about__image-1" src="img/about_img1.jpg">
+            </div>
+            <div class="about__images-wrapper about__images-wrapper-2">
+                <img class="about__image about__image-2" src="img/about_img2.jpg">
+                <img class="about__image about__image-3" src="img/about_img3.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="reasons container">
+        <div class="reasons__text text-wrapper">
+            <div class="text-wrapper__name">
+                <p>Преимущества</p>
+            </div>
+            <div class="text-wrapper__title">
+                <h2>Причины выбирать нас</h2>
+            </div>
+        </div>
+        <div class="reasons__blocks">
+            <div class="reasons__block">
+                <p>Более 14000 довольных покупателей во всех регионах России и Беларуси</p>
+                <span class="reasons__block-digit">
+                    14000+
+                </span>
+            </div>
+            <div class="reasons__block">
+                <p>На рынке больше 12 лет, с 2012 года.</p>
+                <span class="reasons__block-digit">
+                    12+
+                </span>
+            </div>
+            <div class="reasons__block">
+                <p>Более 5000 пунктов выдачи СДЭК, в которые может быть доставлен заказ.</p>
+                <span class="reasons__block-digit">
+                    5000+
+                </span>
+            </div>
+            <div class="reasons__block">
+                <p>Изготовление дверец с индивидуальными размерами менее 14 дней </p>
+                <span class="reasons__block-digit">
+                    14
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalogue container">
+        <div class="catalogue__text text-wrapper">
+            <div class="text-wrapper__name">
+                <p>Продкуция</p>
+            </div>
+            <div class="text-wrapper__title">
+                <h2>Каминные дверцы</h2>
+            </div>
+            <div class="text-wrapper__subtitle">
+                <h3>
+                    НАШ ЗАВОД ПРОИЗВОДИТ ШИРОКИЙ АССОРТИМЕНТ КАМИННЫХ ДВЕРEЦ: МЫ ПРЕДОСТАВЛЯЕМ
+                    КАК геометрически СТАНДАРТНЫЕ модели, КОТОРЫЕ элегантно ВПИШУТСЯ В ЛЮБОЙ
+                    ИНТЕРЬЕР, в трёх ценовых сегментах: ПРЯмые, арочные, квадратные, вертикальные,
+                    горизонтальные, ТАК И СПЕЦИАЛЬНЫЕ эксклюзивные ДВЕРЦЫ на изощрённый вкус, угловые,
+                    эркерные, гильотинного типа и по индивидуальному проекту ПОД ОПРЕДЕЛЁННЫЕ дизайном
+                    задачи и технические УСЛОВИЯ проёмов.
+                </h3>
+            </div>
+        </div>
+        <div class="catalogue__cards">
+            <div class="catalogue__item">
+                <img class="catalogue__image" src="img/classic-dverca.png">
+                <div class="catalogue__list">
+                    <h4>Классические дверцы</h4>
+                    <div class="catalogue__product">
+                        <p><b>«ЭКОНОМ»</b></p>
+                        <div class="catalogue__links">
+                            <a class="catalogue__link" href="#">Одностворчатые</a>
+                            <a class="catalogue__link" href="#">Двустворчатые</a>
+                        </div>
+                    </div>
+                    <div class="catalogue__product">
+                        <p><b>«ПРО»</b></p>
+                        <div class="catalogue__links">
+                            <a class="catalogue__link" href="#">Одностворчатые</a>
+                            <a class="catalogue__link" href="#">Двустворчатые</a>
+                        </div>
+                    </div>
+                    <div class="catalogue__product">
+                        <p><b>«ПРЕМИУМ»</b></p>
+                        <div class="catalogue__links">
+                            <a class="catalogue__link" href="#">Одностворчатые</a>
+                            <a class="catalogue__link" href="#">Двустворчатые</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogue__item">
+                <img class="catalogue__image" src="img/arca-dverca.png">
+                <div class="catalogue__list">
+                    <h4>Арочные дверцы</h4>
+                    <div class="catalogue__product">
+                        <p><b>«ПО ЭСКИЗУ»</b></p>
+                        <div class="catalogue__links">
+                            <a class="catalogue__link" href="#">Одностворчатые</a>
+                            <a class="catalogue__link" href="#">Двустворчатые</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogue__item">
+                <img class="catalogue__image" src="img/angle-dverca.png">
+                <div class="catalogue__list">
+                    <h4>Угловые дверцы</h4>
+                    <div class="catalogue__product">
+                        <p><b>«ПРО»</b></p>
+                        <div class="catalogue__links">
+                            <a class="catalogue__link" href="#">Одностворчатые</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogue__item">
+                <img class="catalogue__image" src="img/special-dverca.png">
+                <div class="catalogue__list">
+                    <h4>Специальные дверцы</h4>
+                    <div class="catalogue__product">
+                        <p><b>«П-ОБРАЗНАЯ ЭКОНОМ»</b></p>
+                        <div class="catalogue__links">
+                            <a class="catalogue__link" href="#">Одностворчатые</a>
+                            <a class="catalogue__link" href="#">Двустворчатые</a>
+                        </div>
+                    </div>
+                    <div class="catalogue__product">
+                        <p><b>«П-ОБРАЗНАЯ ПРО»</b></p>
+                        <div class="catalogue__links">
+                            <a class="catalogue__link" href="#">Одностворчатые</a>
+                            <a class="catalogue__link" href="#">Двустворчатые</a>
+                        </div>
+                    </div>
+                    <div class="catalogue__product">
+                        <p><b>«ЭРКЕР»</b></p>
+                        <div class="catalogue__links">
+                            <a class="catalogue__link" href="#">Призма</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="benefits container">
+        <div class="benefits__text text-wrapper">
+            <div class="text-wrapper__name">
+                <p>Наши дверцы</p>
+            </div>
+            <div class="text-wrapper__title">
+                <h2>Ключевые преимущества</h2>
+            </div>
+            <div class="text-wrapper__subtitle">
+                <h3>
+                    ПРИ ПРОИЗВОДСТВЕ ДВЕРЕЦ, ИСПОЛЬЗУются высококачественные МАТЕРИАЛЫ
+                    И мировые ТЕХНОЛОГИИ Оптимизация производственного цикла, а также
+                    станки с чпу и лазерная резка в купе с уникальными условиями закупки
+                    санкционной немецкой стеклокерамики напрямую с Польши позволяют
+                    предоставлять нашим покупателям оптовые цены в розницу достигнув
+                    при этом премиального качества исполнения. ВСЯ НАША ПРОДУКЦИЯ
+                    УСПЕШНО ПРОТЕСТИРОВАНА В ЛАБОРАТОРИЯХ И ПРОШЛА ПРОВЕРКУ ВРЕМЕНЕМ
+                    более чем У ДЕСЯТКА ТЫСЯЧ КЛИЕНТОВ.
+                </h3>
+            </div>
+        </div>
+        <div class="benefits__slider flicking-viewport" id="benefits-slider">
+            <div class="flicking-camera">
+                <div class="benefits__item panel">
+                    <div class="benefits__left">
+                        <div class="benefits__index">1</div>
+                        <img class="benefits__image" src="img/benefits-1.png">
+                    </div>
+                    <div class="benefits__right">
+                        <h2>СТЕКЛО «ROBAX»</h2>
+                        <p>В качестве стекла используется стеклокерамика «ROBAX» (Германия),
+                            выдерживающая температуру до 750 градусов Цельсия, соответствующие
+                            высоким стандартам.
+                            <br><br>
+                            Огнеупорное стекло обладает свойствами, которые позволяют
+                            устанавливать его в непосредственной близости к огню
+                            и наблюдать за ним без оптического искажения.
+                        </p>
+                    </div>
+                </div>
+                <div class="benefits__item panel">
+                    <div class="benefits__left">
+                        <div class="benefits__index">2</div>
+                        <img class="benefits__image" src="img/benefits-1.png">
+                    </div>
+                    <div class="benefits__right">
+                        <h2>КРАСКА «BARPIMO»</h2>
+                        <p>В качестве стекла используется стеклокерамика «ROBAX» (Германия),
+                            выдерживающая температуру до 750 градусов Цельсия, соответствующие
+                            высоким стандартам.
+                            <br><br>
+                            Огнеупорное стекло обладает свойствами, которые позволяют
+                            устанавливать его в непосредственной близости к огню
+                            и наблюдать за ним без оптического искажения.
+                        </p>
+                    </div>
+                </div>
+                <div class="benefits__item panel">
+                    <div class="benefits__left">
+                        <div class="benefits__index">3</div>
+                        <img class="benefits__image" src="img/benefits-1.png">
+                    </div>
+                    <div class="benefits__right">
+                        <h2>СТЕКЛО «ROBAX»</h2>
+                        <p>В качестве стекла используется стеклокерамика «ROBAX» (Германия),
+                            выдерживающая температуру до 750 градусов Цельсия, соответствующие
+                            высоким стандартам.
+                            <br><br>
+                            Огнеупорное стекло обладает свойствами, которые позволяют
+                            устанавливать его в непосредственной близости к огню
+                            и наблюдать за ним без оптического искажения.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits__progress">
+                <div class="benefits__progress-status"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback container">
+        <div class="feedback__empty">
+            <p>Наши дверцы</p>
+        </div>
+        <div class="feedback__wrapper">
+            <h2 class="feedback__title">СВЯЖИТЕСЬ С НАМИ</h2>
+            <p class="feedback__paragraph">Заполните форму и наш менеджер свяжется с вами и ответит на все ваши вопросы
+            </p>
+            <form class="feedback__form" action="">
+                <div class="feedback__group">
+                    <div class="feedback__input-wrapper">
+                        <input placeholder="ИМЯ" class="feedback__input" type="text" required="">
+                        <div class="feedback__form-status"></div>
+                    </div>
+                    <div class="feedback__input-wrapper">
+                        <input placeholder="ТЕЛЕФОН" class="feedback__input" type="text" required="" />
+                        <div class="feedback__form-status"></div>
+                    </div>
+                    <div class="feedback__input-wrapper">
+                        <input placeholder="ПОЧТА" class="feedback__input" type="text" required="" />
+                        <div class="feedback__form-status"></div>
+                    </div>
+                    <div class="feedback__input-wrapper">
+                        <input placeholder="ТЕМА" class="feedback__input" type="text" required="" />
+                        <div class="feedback__form-status"></div>
+                    </div>
+                </div>
+                <label class="feedback__radio-1 radio-btn"> Физическое лицо
+                    <input type="radio" id="feedback__radio-1" class="radio-btn__input" name="feedback__radio-group" />
+                    <span class="radio-btn__checkmark"></span>
+                </label>
+                <label class="feedback__radio-2 radio-btn"> Юридическое лицо
+                    <input type="radio" id="feedback__radio-1" class="radio-btn__input" name="feedback__radio-group" />
+                    <span class="radio-btn__checkmark"></span>
+                </label>
+                <textarea class="feedback__textarea" placeholder="СООБЩЕНИЕ"></textarea>
+                <label class="feedback__checkbox radio-btn"> ДАЮ СОГЛАСИЕ НА ОБРАБОТКУ ДАННЫХ
+                    <input type="checkbox" id="feedback__check" class="radio-btn__input" />
+                    <span class="radio-btn__checkmark"></span>
+                </label>
+                <button class="button feedback__button">
+                    <span class="button__text">ОТПРАВИТЬ</span>
+                    <div class="button__square">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 9H16.2L13.6 6.4L15 5L20 10L15 15L13.6 13.6L16.2 11H0V9Z" fill="#F1F1F1" />
+                        </svg>
+                    </div>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__info container">
+            <h2 class="footer__phone">8 (963) 312 31 31</h2>
+            <div class="footer__wrapper">
+                <div class="footer__text">
+                    <p><b>Почта:</b></p>
+                    <p>zakaz@mehanikenn.ru</p>
+                </div>
+                <div class="footer__text">
+                    <p><b>Адрес:</b></p>
+                    <p>192289, Санкт-Петербург, Софийская ул., дом №95</p>
+                </div>
+                <img class="footer__logo" src="svg/logo.svg">
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <p>2008-2024 © MehanikenN</p>
+            <p>Политика конфиденциальности</p>
+        </div>
+    </div>
+
+
     <script src="js/gsap.min.js"></script>
-    <script src="js/header.js" async defer></script>
-    <script src="js/hero.js" async defer></script>
+    <script src="js/flicking.pkgd.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/plugins.js" crossorigin="anonymous"></script>
+    <script src="js/header.js"></script>
+    <script src="js/hero.js"></script>
+    <!-- <script src="js/hero3.js"></script> -->
+    <script src="js/benefits.js"></script>
 </body>
 
 </html>
